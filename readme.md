@@ -30,7 +30,7 @@ Em seguida, basta acessar as pastas correspondentes às ferramentas que deseja u
 Caso tenha dificuldades em utilizar as ferramentas Sikulix, Python ou Selenium, recomendamos consultar a documentação oficial de cada uma delas.
 
 ## 👨‍💻 Desenvolvedores:
-Este repositório foi desenvolvido pelos alunos da disciplina de Valid., Verifi. e Testes do curso de Engenharia de Software da UFMS, sob a orientação do professor responsável.
+Este repositório foi desenvolvido pelos alunos (Maycon e Vitor Oliveira) da disciplina de Valid., Verifi. e Testes do curso de Engenharia de Software da UFMS, sob a orientação do professor responsável.
 
 ## 📝 Licença:
 Este repositório está licenciado sob a licença MIT. Sinta-se à vontade para utilizá-lo e modificá-lo de acordo com suas necessidades.
