@@ -2,6 +2,15 @@
 
 Este repositório contém os códigos e artefatos desenvolvidos durante a disciplina de Validação, Verificação e Testes utilizando as ferramentas Sikulix, Python e Selenium.
 
+# 📋 Índice
+
+- [Ferramentas Utilizadas](#ferramentas-utilizadas)
+- [Atividades](#atividades)
+- [Como Utilizar](#como-utilizar)
+- [Dica](#dica)
+- [Desenvolvedores](#desenvolvedores)
+- [Licença](#licença)
+
 # 🛠️ Ferramentas Utilizadas:
 
 - [Sikulix](https://sikulix-2014.readthedocs.io/en/latest/index.html): para automação de testes GUI;
