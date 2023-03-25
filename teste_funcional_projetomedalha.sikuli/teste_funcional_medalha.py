@@ -43,5 +43,3 @@ def gerar_dados_fake():
     faker = Faker("pt_BR")
     print(faker.name)
 # Chamar a função para verificar o site
-
-pip install faker
