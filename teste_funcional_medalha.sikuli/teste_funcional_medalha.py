@@ -9,6 +9,7 @@ def abrir_sistema():
     campo_url = "campo_url.png"
     logo_site = "logo_site.png"
     btn_fechar_popup = "1679764976975.png"
+    
     # Iniciar o aplicativo do navegador
     
     url = "https://sys.projetomedalha.org"
@@ -20,7 +21,7 @@ def abrir_sistema():
     type(Key.ENTER)
     
     # Esperar o carregamento do site
-    time.sleep(10)
+    time.sleep(2)
     wait(btn_fechar_popup)
     click(btn_fechar_popup)
     wait(logo_site)
@@ -86,6 +87,25 @@ def cadastrar_novo_atleta(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, c
     type("\t")
     type("\t")
     type("Brasileiro")
+    type("\t")
+    type("64999522359")
+    type("\t")
+    type("64999522359")
+    type("\t")
+    type("Clube da Putaria")
+    type("\t")
+    type("\t")
+    type("\t")
+    type("Instagram")
+    type("\t")
+    type("vitororesendeb@gmail.com")
+    type("\t")
+    type("senha123")
+    type("\t")
+    type("senha123")
+    type("\t")
+    type("\t")
+    type("\n")
 
 abrir_sistema()
-cadastrar_novo_atleta("Maycon", "Mota", "0020", "074200300152", "00010", "07/06/2001", "79062370")
+cadastrar_novo_atleta("Maycon", "Mota", "0020", "07420030015", "00010", "07/06/2001", "79062370")
