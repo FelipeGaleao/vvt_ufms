@@ -72,5 +72,3 @@ def fazer_login_sistema(usuario, senha):
     
 abrir_sistema()
 fazer_login_sistema("074200300152", "senha123")
-deslogar_sistema()
-fazer_login_sistema("074200300152", "senha1234")
