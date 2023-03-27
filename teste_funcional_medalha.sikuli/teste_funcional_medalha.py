@@ -1,6 +1,7 @@
 # Importar módulos necessários
 from sikuli import *
 import time 
+import webbrowser
 
 def abrir_sistema():
     # Definir as imagens
@@ -9,14 +10,13 @@ def abrir_sistema():
     logo_site = "logo_site.png"
     btn_fechar_popup = "1679764976975.png"
     # Iniciar o aplicativo do navegador
-    click(navegador_icone)
+    
+    url = "https://sys.projetomedalha.org"
+    chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
+    webbrowser.get(chrome_path).open(url)
 
-    # Esperar o navegador abrir
-    wait(campo_url)
-    click(campo_url)
     
     # Digitar a URL do site
-    type("sys.projetomedalha.org")
     type(Key.ENTER)
     
     # Esperar o carregamento do site
@@ -80,6 +80,12 @@ def cadastrar_novo_atleta(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, c
     type(dt_nascimento)
     type("\t")
     type(cep)
-    
+    type("\t")
+    type("\t")
+    type("\t")
+    type("\t")
+    type("\t")
+    type("Brasileiro")
+
 abrir_sistema()
 cadastrar_novo_atleta("Maycon", "Mota", "0020", "074200300152", "00010", "07/06/2001", "79062370")
