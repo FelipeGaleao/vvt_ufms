@@ -92,7 +92,7 @@ def cadastrar_novo_atleta(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, c
     type("\t")
     type("64999522359")
     type("\t")
-    type("Clube da Putaria")
+    type("Palmeiras")
     type("\t")
     type("\t")
     type("\t")

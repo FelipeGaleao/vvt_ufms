@@ -60,7 +60,8 @@ def cpf_invalido(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, cep, nacio
     txt_email = "txt_email.png"
     txt_senha_1 = "txt_senha_1.png"
     txt_senha_2 = "txt_senha_2.png"
-    txt_preencha = 
+    txt_preencha = "Captura de tela 2023-04-02 225508.png"
+    btn_salvar = "btn_salvar.png"
     
     print("Atleta cadastrado no sistema")
     wait(txt_campo_nome)
@@ -102,12 +103,15 @@ def cpf_invalido(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, cep, nacio
     type(email)
     type("\t")
     type(senha)
-    type("\t")
-    type("\t")
-    type("\t")
-    type("\t")
-    type("\n")
-    
+    Mouse.wheel(WHEEL_DOWN, 2)
+    click(btn_salvar)
+
+    time.sleep(2)
+    if exists(txt_preencha):
+        print("Teste Passou.")
+    else:
+        return False
+    return True
 
 abrir_sistema()
 cpf_invalido("Maycon", "Mota", "0020", "11111111111", "00010", "07/06/2001", "79062370", "Brasileiro", "64999522359", "64999522359", "Palmeiras", "Instagram", "teste2@gmail.com", "senha123", "senha123")
