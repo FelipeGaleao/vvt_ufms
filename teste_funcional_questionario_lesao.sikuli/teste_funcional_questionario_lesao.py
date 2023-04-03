@@ -56,47 +56,45 @@ def fazer_login_sistema(usuario, senha):
     else:
         print("O usuário não conseguiu fazer login")
 
-def preencher_quest_socioeconomico():
-    input_raca = "input_raca.png"
+def preencher_quest_lesao():
+    input_selecione = "input_selecione.png" 
     btn_submit_questionario = "Salvar.png"
     popup_cadastro = "popup_cadastro.png"
     
     type("l", Key.CTRL)
-    type("https://sys.projetomedalha.org/perfil/socioeconomico/")
+    type("https://sys.projetomedalha.org/perfil/lesoes/")
     type(Key.ENTER)
     time.sleep(5)
-    click(input_raca)
-    type("p")
+    click(input_selecione)
+    type("s")
     type(Key.ENTER)
     type("\t")
+    time.sleep(2)
+    type("Joelho")
     type("\t")
-    type("Mato Grosso do Sul")
+    type("s")
     type("\t")
+    time.sleep(2)
+    type("Joelho")
     type("\t")
-    type("Casado")
+    type("s")
     type("\t")
-    type("M")
+    time.sleep(2)
+    type("Joelho")
     type("\t")
-    type("2")
+    type("s")
     type("\t")
+    type("s")
     type("\t")
-    type(Key.SPACE)
-    type("\t")
-    type(Key.SPACE)
-    type("\t")
-    type(Key.SPACE)
-    type("\t")
-    type(Key.SPACE)
-    type("\t")
-    type("2")
-    Mouse.wheel(WHEEL_DOWN, 2)
+    type("s")
     click(btn_submit_questionario)
-    if(exists(popup_cadastro)):
-        print("O usuário cadastrou um questionario socioeconomico")
+    time.sleep(5)
+    if(exists(popup_cadastro):
+        print("Questionário de lesões cadastrado com sucesso!")
     else:
-        print("O usuário não conseguiu cadastrar um questionario socioeconomico")
+        print("Questionário de lesões não cadastrado!")
 
     
 abrir_sistema()
 fazer_login_sistema("074200300152", "senha123")
-preencher_quest_socioeconomico()
+preencher_quest_lesao()
