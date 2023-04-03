@@ -31,23 +31,6 @@ def abrir_sistema():
         return False
     
     return True
-
-def deslogar_sistema():
-    btn_usuario = "btn_usuario.png"
-    btn_logout = "btn_logout.png"
-    tela_logout = "1679949805780.png"
-
-    click(btn_usuario)
-    time.sleep(2)
-    click(btn_usuario)
-    click(btn_logout)
-    time.sleep(3)
-    if exists(tela_logout):
-        print("Usuário deslogou com sucesso")
-    else:
-        print("O usuário não conseguiu deslogar")
-
-   
     
 def fazer_login_sistema(usuario, senha):
     txt_campo_cpf = "1679948457154.png"
@@ -55,6 +38,7 @@ def fazer_login_sistema(usuario, senha):
     btn_fazer_login = "btn_fazer_login.png"
 
     tela_inicial_sistema = "tela_inicial_sistema.png"
+    btn_ok = "btn_ok.png"
     
     click(txt_campo_cpf)
     type(usuario)
@@ -65,11 +49,11 @@ def fazer_login_sistema(usuario, senha):
     wait(tela_inicial_sistema)
     
     if exists(tela_inicial_sistema):
-        print("Usuário logou com sucesso")
+        click(btn_ok)
+        print("O usuário não conseguiu fazer login")
     else:
         print("O usuário não conseguiu fazer login")
 
     
 abrir_sistema()
 fazer_login_sistema("074200300152", "senha1234")
-deslogar_sistema()

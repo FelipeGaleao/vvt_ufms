@@ -5,10 +5,10 @@ import webbrowser
 
 def abrir_sistema():
     # Definir as imagens
-    navegador_icone = "navegador_icone.png"
-    campo_url = "campo_url.png"
-    logo_site = "logo_site.png"
-    btn_fechar_popup = "1679764976975.png"
+    navegador_icone = "navegador_icone-1.png"
+    campo_url = "campo_url-1.png"
+    logo_site = "logo_site-1.png"
+    btn_fechar_popup = "1679764976975-1.png"
     
     # Iniciar o aplicativo do navegador
     
@@ -33,7 +33,7 @@ def abrir_sistema():
     
     return True
 
-def cadastrar_novo_atleta(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, cep):
+def cpf_invalido(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, cep, nacionalidade, celular, telefone, clube, face, email, senha, confirmar):
     """ Função para cadastrar um novo atleta """
     
     link_cadastro = "link_cadastro.png"
@@ -60,6 +60,7 @@ def cadastrar_novo_atleta(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, c
     txt_email = "txt_email.png"
     txt_senha_1 = "txt_senha_1.png"
     txt_senha_2 = "txt_senha_2.png"
+    txt_preencha = 
     
     print("Atleta cadastrado no sistema")
     wait(txt_campo_nome)
@@ -86,26 +87,27 @@ def cadastrar_novo_atleta(nome, sobrenome, cartao_sus, cpf, rg, dt_nascimento, c
     type("\t")
     type("\t")
     type("\t")
-    type("Brasileiro")
+    type(nacionalidade)
     type("\t")
-    type("64999522359")
+    type(celular)
     type("\t")
-    type("64999522359")
+    type(telefone)
     type("\t")
-    type("Clube da Putaria")
+    type(clube)
     type("\t")
     type("\t")
     type("\t")
-    type("Instagram")
+    type(face)
     type("\t")
-    type("vitororesendeb@gmail.com")
+    type(email)
     type("\t")
-    type("senha123")
+    type(senha)
     type("\t")
-    type("senha123")
+    type("\t")
     type("\t")
     type("\t")
     type("\n")
+    
 
 abrir_sistema()
-cadastrar_novo_atleta("Maycon", "Mota", "0020", "07420030015", "00010", "07/06/2001", "79062370")
+cpf_invalido("Maycon", "Mota", "0020", "11111111111", "00010", "07/06/2001", "79062370", "Brasileiro", "64999522359", "64999522359", "Palmeiras", "Instagram", "teste2@gmail.com", "senha123", "senha123")
